@@ -1,0 +1,54 @@
+<html>
+<head>
+<link rel="stylesheet" href="solarsystemcss.css">
+<script src="jquery-1.11.3.min.js"></script>
+<script>
+var main = function() {
+$('#s1').click(function(){
+    $("#earth-orbit").css('border-width','0px');
+    $("#mars-orbit").css('border-width','0px');
+    $("#jupiter-orbit").css('border-width','0px');
+    $("#saturn-orbit").css('border-width','0px');
+});
+$('#s2').click(function(){
+    $("#mars-orbit").css('border-width','1px');
+    $("#jupiter-orbit").css('border-width','1px');
+    $("#saturn-orbit").css('border-width','1px');
+    $("#earth-orbit").css('border-width','1px');
+});
+};
+$(document).ready(main);
+
+	</script>
+		<script src="jquery-1.11.3.min.js"></script>
+    </head>
+    <body>
+    	<header>
+    		dasdas</header>
+	<p style="color:white">Click on the right side of the sun to show the orbits and the left side to hide the orbits</p>
+<div style="color:white;height:100px;width:500px;">This whole page has been made by self-made images(background) and does not use any gif or flash. Also, it has been made with only HTML and CSS; though jquery was used for the orbits toggle function.</div>
+	<div id="s1" style="background-color:;height:250px;width:150px;top:39%;left:45%;position:absolute;z-index:222223123"> </div>
+	<div id="s2" style="background-color:	;height:250px;width:150px;top:39%;left:50%;position:absolute;z-index:231232221"> </div>
+        <div class='sun'><img id="sun" src="sun.png"></div>
+       <div class='earth'><div id="earth-orbit">
+        <img id="earth" src="earth2.png" title="EARTH">
+        </div></div>
+		 <div id="mars-orbit">
+		<img id="mars" src="mars.gif" title="MARS">
+		</div>
+		 <div id="jupiter-orbit">
+        <img id="jupiter" src="jupiter.png" title="saturn">
+        </div>
+		<div id="saturn-orbit">
+        <img id="saturn" src="saturn.png" title="saturn">
+        </div>
+		<!--<div id="astroids-orbit3">
+		</div>
+		
+		<img id="earth" src="venus.jpg">
+		<img id="earth" src="mars.jpg">
+		<img id="earth" src="jupiter.jpg">
+		<img id="earth" src="saturn.jpg">
+		<img id="earth" src="uranus.jpg">-->
+		</body>
+</html>
